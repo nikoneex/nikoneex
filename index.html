@@ -20,47 +20,149 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Inconsolata:wght@400;500&family=Open+Sans&display=swap"
-        rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 </head>
 
 <body>
-    <section id="main">
-        <section id="sidebar" class="d-none d-lg-block">
-
-            <div id="my-botui-app" class="terminal">
+    <section id="main" class="container-fluid">
+        <section id="sidebar">
+            <!-- Bot UI elm -->
+            <!-- <div id="my-botui-app" class="terminal">
                 <bot-ui></bot>
+            </div> -->
+            <div id="intro">
+                <h2>nikoneex</h2>
+                <div id="avatar-container">
+                    <div
+                        class="online animate__animated animate__heartBeat animate__delay-2s animate__slower animate__infinite">
+                    </div>
+                    <img src="assets/niko_ph.png" alt="avatar" class="img-thumbnail">
+                </div>
+                <p>Hey! My name is <span>Niko</span>.<br><span>👋</span> Welcome to my site!</p>
             </div>
-
+            <hr>
+            <nav>
+                <nav id="navbar" class="navbar navbar-dark bg-dark">
+                    <nav class="nav nav-pills flex-column" data-target="#right-container">
+                        <a class="nav-link" href="#about-container"><i class="far fa-user"></i>about</a>
+                        <a class="nav-link" href="#skills-container"><i class="fas fa-check-double"></i>skills</a>
+                        <a class="nav-link" href="#projects-container"><i class="fa fa-code"></i>projects</a>
+                        <a class="nav-link" href="#contact-container"><i class="fa fa-at"></i>contact</a>
+                    </nav>
+                </nav>
+            </nav>
             <div id="socials-container">
-                <a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/nicholas-mungcal-30184a114/" target="_blank"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://nikoneex.github.io" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a>
             </div>
         </section>
 
-        <section id="right-container">
-            <div id="about-me-container" class="container">
-                <h1>About Me</h1>
+        <section id="right-container" data-spy="scroll">
+            <div id="about-container" class="container">
+                <div class="header">about</div>
+                <div class="info">
+                    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                            <li data-target="#carousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card" style="width: 18rem;">
+                                    <p class="card-text" style="padding: 1.25rem; padding-bottom: 0;"><span
+                                            class="username">Niko Mungcal</span><br><span class="location"><i
+                                                class="fas fa-map-pin"></i> Los Angeles, California</span></p>
+                                    <img class="card-img-top" src="assets/niko_ph.png" alt="Card image cap">
+                                    <div class="card-body" style="justify-content: center;">
+                                        <h5 class="card-title"><i class="far fa-heart"></i><span class="likes"></span>
+                                        </h5>
+                                        <p class="card-text caption">I'm a <span class="hashtag">&#35;Frontend
+                                                Developer</span> and <span class="hashtag">&#35;Designer</span>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 18rem;">
+                                    <p class="card-text" style="padding: 1.25rem; padding-bottom: 0;"><span
+                                            class="username">Niko Mungcal</span><br><span class="location"><i
+                                                class="fas fa-map-pin"></i> Los Angeles, California</span></p>
+                                    <img class="card-img-top" src="assets/coding.jpg" alt="Card image cap">
+                                    <div class="card-body" style="justify-content: center;">
+                                        <h5 class="card-title"><i class="far fa-heart"></i><span class="likes"></span>
+                                        </h5>
+                                        <p class="card-text caption">My two favorite buzzwords are <span
+                                                class="hashtag">&#35;intuitive</span> and <span
+                                                class="hashtag">&#35;responsive</span>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 18rem;">
+                                    <p class="card-text" style="padding: 1.25rem; padding-bottom: 0;"><span
+                                            class="username">Niko Mungcal</span><br><span class="location"><i
+                                                class="fas fa-map-pin"></i> Los Angeles, California</span></p>
+                                    <img class="card-img-top" src="assets/jewelry.jpeg" alt="Card image cap">
+                                    <div class="card-body" style="justify-content: center;">
+                                        <h5 class="card-title"><i class="far fa-heart"></i><span class="likes"></span>
+                                        </h5>
+                                        <p class="card-text caption">I also enjoy making <span class="hashtag">&#35;wire
+                                                jewelry</span>. Here's one of my favorite pieces!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 18rem;">
+                                    <p class="card-text" style="padding: 1.25rem; padding-bottom: 0;"><span
+                                            class="username">Niko Mungcal</span><br><span class="location"><i
+                                                class="fas fa-map-pin"></i> Los Angeles, California</span></p>
+                                    <img class="card-img-top"
+                                        src="https://media1.tenor.com/images/78d402f33f948582e67c9784f901b0b8/tenor.gif?itemid=14833296"
+                                        alt="Card image cap">
+                                    <div class="card-body" style="justify-content: center;">
+                                        <h5 class="card-title"><i class="far fa-heart"></i><span class="likes"></span>
+                                        </h5>
+                                        <button href="#" class="btn btn-primary-light btn-sm"><i
+                                                class="fas fa-paper-plane"></i>Hire
+                                            Me</button>
+                                        <button href="#" class="btn btn-outline-primary-light btn-sm"><i class="far fa-file-alt"></i>View Resume</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div id="skills-container" class="container">
-                <h1>Skills</h1>
+                <div class="header">skills</div>
+                <div class="info"><code>html</code></div>
             </div>
             <div id="projects-container" class="container">
-                <h1>Projects</h1>
+                <div class="header">projects</div>
+                <div class="info"></div>
             </div>
             <div id="contact-container" class="container">
-                <h1>Contact</h1>
+                <div class="header">contact</div>
+                <div class="info"></div>
             </div>
         </section>
-
+    </section>
+    <section id="foot-nav">
+        <a class="footer-link" href="#about-container"><i class="far fa-user fa-2x"></i></a>
+        <a class="footer-link" href="#skills-container"><i class="fas fa-check-double fa-2x"></i></a>
+        <a class="footer-link" href="#projects-container"><i class="fa fa-code fa-2x"></i></a>
+        <a class="footer-link" href="#contact-container"><i class="fa fa-at fa-2x"></i></a>
     </section>
 
     <!-- Bot UI -->
@@ -71,6 +173,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="botstyles.css">
     <script src="main.js"></script>
+    <script src="bot.js"></script>
 
 </body>
 
