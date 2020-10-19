@@ -36,12 +36,15 @@ html {
     text-align: center;
 }
 
-#intro>h2 {
+
+#intro > h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 2.5em;
     font-weight: 900;
     color: white;
+    text-decoration: none!important;
 }
+
 
 #avatar-container {
     position: relative;
@@ -237,6 +240,11 @@ i {
     border-radius: 16px !important;
 }
 
+.niko-bg {
+    background-color: #3100b8;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
 .card-img,
 .card-img-top {
     border-radius: 0;
@@ -329,11 +337,11 @@ i {
     border-bottom-right-radius: 16px;
 }
 
-.skill-icon > i {
+.skill-icon>i {
     margin: 0 .2em;
 }
 
-.skill-icon > i:hover {
+.skill-icon>i:hover {
     opacity: 0.5;
 }
 
@@ -362,7 +370,7 @@ i {
     flex-wrap: wrap;
 }
 
-#projects-container > .info > .card {
+#projects-container>.info>.card {
     margin: 1em 1.5em;
 }
 
@@ -408,7 +416,7 @@ i {
 #contact-container>.info>.card {
     text-align: center;
     width: 18rem;
-    min-width: 50%!important;
+    min-width: 50% !important;
     margin: 0 auto;
 }
 

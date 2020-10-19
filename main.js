@@ -1,7 +1,6 @@
 // const amOnline = document.querySelector('.online')
 let likes = 0;
 
-
 $('.far.fa-heart').click(function() {
     likes++;
     $('.likes').html(likes);
